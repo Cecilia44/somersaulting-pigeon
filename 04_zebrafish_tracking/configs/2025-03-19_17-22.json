@@ -1,0 +1,66 @@
+{
+  "experiment_id": "2025-03-19_17-22",
+  "project_root": "..",
+  "study_scope": {
+    "purpose": "qualitative visualization of zebrafish turning behavior",
+    "camera_calibration": "none",
+    "synchronization": "one manually selected synchronization frame followed by one-to-one pairing of subsequent frames",
+    "metric_3d_claim": false
+  },
+  "views": {
+    "left": {
+      "video": "data/raw/Left_2025-03-19_17-22.avi",
+      "frames_dir": "data/aligned/Left_2025-03-19_17-22",
+      "first_frame": 72,
+      "last_frame": 160,
+      "prompt": {
+        "points": [[507.13675214, 504.59829060]],
+        "labels": [1],
+        "provenance": "author-approved proxy from the legacy first-mask centroid; original click was not recorded"
+      },
+      "track_npy": "data/processed/Left_2025-03-19_17-22.centers.npy",
+      "track_csv": "data/processed/Left_2025-03-19_17-22.centers.csv",
+      "legacy_track_npy": "data/processed/Left_2025-03-19_17-22.legacy.npy"
+    },
+    "top": {
+      "video": "data/raw/Top_2025-03-19_17-22.avi",
+      "frames_dir": "data/aligned/Top_2025-03-19_17-22",
+      "first_frame": 65,
+      "last_frame": 153,
+      "prompt": {
+        "points": [[1161.39246468, 542.81161695]],
+        "labels": [1],
+        "provenance": "author-approved proxy from the legacy first-mask centroid; original click was not recorded"
+      },
+      "track_npy": "data/processed/Top_2025-03-19_17-22.centers.npy",
+      "track_csv": "data/processed/Top_2025-03-19_17-22.centers.csv",
+      "legacy_track_npy": "data/processed/Top_2025-03-19_17-22.legacy.npy"
+    }
+  },
+  "tracking": {
+    "checkpoint": "checkpoints/sam2.1_hiera_large.pt",
+    "model_config": "configs/sam2.1/sam2.1_hiera_l.yaml",
+    "device": "auto",
+    "autocast_dtype": "bfloat16",
+    "annotation_frame": 0,
+    "object_id": 1
+  },
+  "reconstruction": {
+    "method": "orthographic_fusion",
+    "calibration_status": "none; qualitative visualization only",
+    "paired_fps": 60.0,
+    "interpolate_missing": true,
+    "origin_px": [0.0, 0.0, 0.0],
+    "scale_units_per_px": [1.0, 1.0, 1.0],
+    "axis_sign": [1.0, 1.0, 1.0],
+    "units": "px"
+  },
+  "outputs": {
+    "trajectory_csv": "outputs/2025-03-19_17-22/trajectory_3d.csv",
+    "trajectory_npy": "outputs/2025-03-19_17-22/trajectory_3d.npy",
+    "figures": [
+      "outputs/2025-03-19_17-22/trajectory_3d.png",
+      "outputs/2025-03-19_17-22/trajectory_3d.svg"
+    ]
+  }
+}

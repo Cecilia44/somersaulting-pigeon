@@ -1,0 +1,4 @@
+# Exact environment used by this cleaned repository. A CUDA-capable GPU is
+# strongly recommended for SAM 2. See README.md before installing PyTorch.
+-e .[tracking]
+

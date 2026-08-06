@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Large model weights are downloaded separately.
+checkpoints/*.pt
+checkpoints/*.part
+
+# Newly generated results; the provided legacy figure remains versionable.
+outputs/*/
+!outputs/legacy/
+!outputs/legacy/3D_2025-03-19_17-22.svg
+data/processed/*.centers.npy
+data/processed/*.centers.csv
+
