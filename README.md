@@ -74,11 +74,3 @@ For the zebrafish tracking pipeline, please refer to:
 
 ```text
 04_zebrafish_tracking/README.md
-
-## Citation
-
-Citation information will be added after publication.
-
-## License
-
-License information will be added.
