@@ -1,0 +1,1 @@
+VeryFastTree -threads 50 -fastest -nt pigeon_depth6_filtered_biAllele_noMissing_chrAuto_avoidIUPAC.recode.min4.rename.fasta > pigeon_filtered_biAllele_noMissing_chrAuto_veryfasttree.tre
